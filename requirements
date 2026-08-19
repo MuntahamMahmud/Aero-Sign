@@ -1,0 +1,7 @@
+opencv-python
+mediapipe
+numpy
+pymavlink
+SpeechRecognition
+pyaudio
+vosk

@@ -1,0 +1,51 @@
+Aerosign Gesture setup notes
+
+Project root:
+E:\AEROSIGN\aerosign-gesture-mavlink-master
+
+Virtual environment:
+- Name: gesture_env
+- Path: E:\AEROSIGN\aerosign-gesture-mavlink-master\gesture_env
+- Creation command used (Python 3.11 to match README target):
+  & "$env:LOCALAPPDATA\Programs\Python\Python311\python.exe" -m venv gesture_env
+- Activation command:
+  . .\gesture_env\Scripts\Activate.ps1
+
+Requirement files installed:
+- requirements
+
+Packages installed from requirements:
+- opencv-python
+- mediapipe==0.10.14 (installed to match README; mediapipe 1.x lacks mediapipe.solutions)
+- numpy
+- pymavlink
+
+Additional transitive packages installed by pip:
+- absl-py
+- certifi
+- cffi
+- contourpy
+- cycler
+- fastcrc
+- flatbuffers
+- fonttools
+- kiwisolver
+- lxml
+- matplotlib
+- opencv-contrib-python
+- packaging
+- pillow
+- pycparser
+- pyparsing
+- python-dateutil
+- six
+- sounddevice
+
+Validation performed:
+- python main.py --help
+- import check for cv2, mediapipe, numpy, pymavlink
+
+Manual steps remaining:
+- None for environment setup.
+- To run the app normally, ensure a webcam is available and, if using MAVLink, a target endpoint/serial connection is configured as needed.
+- The README's normal execution command is: python main.py
